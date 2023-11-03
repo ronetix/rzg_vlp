@@ -16,17 +16,17 @@ BRANCH = "v2.9/rz"
 BRANCH_mbedtls = "mbedtls-2.28"
 
 SRC_URI = " \
-	git://github.com/renesas-rz/rzg_trusted-firmware-a.git;branch=${BRANCH};protocol=https \
+	git://github.com/ronetix/arm-trusted-firmware.git;branch=${BRANCH};protocol=https \
 	git://github.com/ARMmbed/mbedtls.git;branch=${BRANCH_mbedtls};name=mbedtls;destsuffix=mbedtls \
 "
 
-SRCREV = "c314a391cf3eaf904e3b7a2875af15cc8254dab5"
+SRCREV = "215afc594ae3ebdb152840b090738e0d93807d81"
 SRCREV_mbedtls = "dd79db10014d85b26d11fe57218431f2e5ede6f2"
 
 PV = "v2.9+git"
 
 COMPATIBLE_MACHINE_rzg2h = "(ek874|hihope-rzg2m|hihope-rzg2n|hihope-rzg2h)"
-COMPATIBLE_MACHINE_rzg2l = "(smarc-rzg2l|rzg2l-dev|smarc-rzg2lc|rzg2lc-dev|smarc-rzg2ul|rzg2ul-dev|smarc-rzv2l|rzv2l-dev)"
+COMPATIBLE_MACHINE_rzg2l = "(rnx-rzg2ul-osm|smarc-rzg2l|rzg2l-dev|smarc-rzg2lc|rzg2lc-dev|smarc-rzg2ul|rzg2ul-dev|smarc-rzv2l|rzv2l-dev)"
 
 PLATFORM ?= "rzg"
 
