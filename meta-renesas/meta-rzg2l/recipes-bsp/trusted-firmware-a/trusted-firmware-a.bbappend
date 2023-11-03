@@ -20,6 +20,11 @@ EXTRA_FLAGS_smarc-rzg2ul = "BOARD=g2ul_smarc SOC_TYPE=1 SPI_FLASH=AT25QL128A"
 PLATFORM_rzg2ul-dev = "g2ul"
 EXTRA_FLAGS_rzg2ul-dev = "BOARD=g2ul_type1_ddr4_dev SOC_TYPE=1"
 
+PLATFORM_rnx-rzg2ul-osm = "g2ul"
+EXTRA_FLAGS_rnx-rzg2ul-osm = "BOARD=g2ul_smarc SOC_TYPE=1 SPI_FLASH=AT25QL128A"
+FLASH_ADDRESS_BL2_BP_rnx-rzg2ul-osm = "00000"
+FLASH_ADDRESS_FIP_rnx-rzg2ul-osm = "1D200"
+
 PLATFORM_smarc-rzv2l = "v2l"
 EXTRA_FLAGS_smarc-rzv2l = "BOARD=smarc_4"
 PMIC_EXTRA_FLAGS_smarc-rzv2l = "BOARD=smarc_pmic_2"
