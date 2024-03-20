@@ -13,7 +13,7 @@ COMPATIBLE_MACHINE_rzg1 = "(iwg20m-g1m|iwg20m-g1n|iwg21m|iwg22m|iwg23s)"
 KERNEL_URL = " \
     git://github.com/ronetix/linux.git"
 BRANCH = "${@oe.utils.conditional("IS_RT_BSP", "1", "rz-5.10-cip36-rt14", "rz-5.10-cip36",d)}"
-SRCREV = "${@oe.utils.conditional("IS_RT_BSP", "1", "80929ede34ab51d9a80e366837e89c0eaf0ac2cb", "03a403040c6b3e52945fedac8e1d55d1508b4db2",d)}"
+SRCREV = "${@oe.utils.conditional("IS_RT_BSP", "1", "80929ede34ab51d9a80e366837e89c0eaf0ac2cb", "8f28117eeda0fd5364999bb1a687168a8e3aa781",d)}"
 
 SRC_URI = "${KERNEL_URL};protocol=https;nocheckout=1;branch=${BRANCH}"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
